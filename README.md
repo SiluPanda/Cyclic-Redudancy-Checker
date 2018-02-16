@@ -4,15 +4,15 @@ This is a communication system designed with LEDs for communication and CRC to d
 There are two files in this project. 
 1. crc.cpp :
     This is the sender side code by which calculates the CRC bits after polynomial division. 
-    Inputs: > Length of the bit string need to be sent.
-            > Bit string
-            > Length of the generator
-            > Generator
+    Inputs:  Length of the bit string need to be sent.
+             Bit string
+             Length of the generator
+             Generator
 
-    Outputs: > Number of 0's to be appended.
-             > Message after appending 0's.
-             > CRC bits.
-             > Transmitted Frame.
+    Outputs:  Number of 0's to be appended.
+              Message after appending 0's.
+              CRC bits.
+              Transmitted Frame.
          
 2. crc.oy :
 This is the receiver side code which determines whether the bit string received is correct or not with help of predecided generator.
